@@ -2,10 +2,6 @@
 # ProteinScope Command Center 🧬
 Advanced Molecular Alignment & Bio-Threat Assessment System
 
-### How to Run Locally:
-1. Open terminal and install requirements: `pip install -r requirements.txt`
-2. Run the app: `streamlit run app.py`
-
 > Real-time 3D protein structural comparison and pathogenicity prediction in your browser.
 
 ## 🎯 What It Does
@@ -21,17 +17,31 @@ Drop two PDB files (a reference protein and a variant) → ProteinScope:
 Streamlit · Biopython · NumPy · SciPy · py3Dmol + stmol · Plotly · scikit-learn
 
 ## ⚡ Install & Run
-```bash
-git clone <your-repo>
-cd proteinscope
-pip install -r requirements.txt
+1. Clone this repo to a destination directory and change PATH:
+```
+git clone https://github.com/Cresol3127/ProteinScope /path/to/dest/ && cd /path/to/dest/ProteinScope
+```
+
+2. Install required libraries for python:
+```
+pip install -r requirements.txt         # for Windows users
+pip3 install -r requirements.txt        # for MacOS users
+nix-shell                               # for Nix users
+```
+
+3. Run model to train on the data:
+```
 python models/train_classifier.py     # one-time: builds rf_pathogen.pkl
+```
+
+4. Finally, launch the dashboard: (it'll auto-open in a browser, or you can click one of the links from the output)
+```
 streamlit run app.py
 ```
 
 ## 📂 Project Structure
 ```
-proteinscope/
+ProteinScope/
 ├── app.py
 ├── core/
 │   ├── pdb_parser.py
@@ -43,14 +53,8 @@ proteinscope/
 │   ├── train_classifier.py
 │   └── rf_pathogen.pkl
 ├── requirements.txt
+├── shell.nix
 └── README.md
 ```
 
-## 🎤 Hackathon Pitch
-- **Hook:** "Every year, millions of genetic variants are discovered — but 99% are 'variants of unknown significance.' Doctors can't act on them."
-- **Problem:** Manually evaluating 3D structural impact takes weeks per variant.
-- **Solution:** ProteinScope does it in **2 seconds**, in the browser, with a draggable 3D overlay any clinician can read.
-- **Impact:** Faster diagnostics for cancer, rare diseases, and pandemic preparedness.
-
-## 📸 Screenshots
-*(Add: 3D overlay tab · RMSD chart · Pathogen risk panel)*
+## 📸 Project Showcase
