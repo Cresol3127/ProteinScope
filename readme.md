@@ -58,3 +58,14 @@ ProteinScope/
 ```
 
 ## 📸 Project Showcase
+** Homepage seen upon launching the dashboard **
+<img width="928" height="986" alt="home" src="https://github.com/user-attachments/assets/036583e7-c842-456c-8bcd-b7c78f5c38b5" />
+
+** Sidebar with utilities **
+<img width="270" height="1077" alt="sidebar" src="https://github.com/user-attachments/assets/e4d69876-ccff-42e1-b508-0a477a2313c8" />
+
+** Final Output **
+<img width="781" height="844" alt="final-output" src="https://github.com/user-attachments/assets/cb9527a0-25af-443b-9430-9590839de9c7" />
+
+## License
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
